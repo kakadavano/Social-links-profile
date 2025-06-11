@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frontend Mentor | Social links profile</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+QLD+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+                align-items: center;
+                background-color: #141414;
+            }
+            .container {
+                display: grid;
+                width: 300px;
+                height: 500px;
+                background-color: #1F1F1F;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 0.4fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                gap: 11px;
+                padding: 35px;
+                border-radius: 1cap;
+            }
+            .social {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #333333;
+                color: white;
+                border-radius: 1cap;
+                font-size: 13px;
+                font-weight: bold;
+                height: 44px;
+                transition: background-color 0.3s ease;
+                text-decoration: none;
+            }
+            .social:hover {
+                background-color: #C4F82A;
+                color: #141414;
+            }
+            img {
+                border-radius: 50%;
+            }
+            .image {
+                display: flex;
+                justify-content: center;
+                height: 70px;
+                margin-top: 15px;
+            }
+            .name {
+                display: flex;
+                justify-content: center;
+                font-size: x-large;
+                font-weight: bold;
+                align-items: flex-end;
+                color: white;
+            }
+            .location {
+                font-weight: bold;
+                color: #C4F82A;
+                text-align: center;
+                font-size: 13px;
+            }
+            .occupation {
+                display: flex;
+                justify-content: center;
+                color: white;
+                font-size: 12px;
+                align-items: center;
+            }
+            .font {
+                font-family: "Inter", sans-serif;
+            }
+            @media (max-width: 375px) {
+                .container {
+                    padding: 17.5px;
+                    width: 250px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="font image"><img src="./social-links-profile-main/assets/images/IMG_9228.jpg"></div>
+            <div class="font name">David Esang</div>
+            <div class="font location">Lagos, Nigeria</div>
+            <div class="font occupation">"Aspiring web3 developer."</div>
+            <div class="font"><a href="https://github.com/kakadavano" class="social">GitHub</a></div>
+            <div class="font"><a href="https://www.frontendmentor.io/profile/kakadavano" class="social">Frontend Mentor</a></div>
+            <div class="font"><a href="https://www.linkedin.com/in/david-esang-9066b8244/" class="social">Linkedin</a></div>
+            <div class="font"><a href="https://x.com/da_va_no" class="social">Twitter</a></div>
+            <div class="font"><a href="https://www.instagram.com/da_va_no/" class="social">Instagram</a></div>
+        </div>
+    </body>
+
+</html>
